@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-permalink: /aboutme
+permalink: /contact
 ---
 
 blah blah blah about me... contact me at...
