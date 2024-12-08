@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to Lagrange!
+title: Design Sprints!
 permalink: /about
 ---
 
