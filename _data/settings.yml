@@ -8,6 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Design Sprints',   url: 'about.html'}
+- {name: 'Homework',   url: 'homework.html'}
 - {name: 'Manifesto', url: 'writing.html'}
 - {name: 'About Me', url: 'contact.html'}
 
