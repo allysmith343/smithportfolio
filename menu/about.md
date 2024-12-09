@@ -12,7 +12,7 @@ Design Sprints are group projects where we follow the design process to create a
 
 ## Design for Dimensions
 
-We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We create personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
+We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
 **[Read more](https://medium.com/@alsmith_29721/design-sprint-1-knotty-board-0fe8792461db)**
 
