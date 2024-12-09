@@ -32,7 +32,7 @@ We investigated the difference between analytical and persuasive data visualizat
 
 ## Design for Another World
 
-Based on a survey we sent out to Davidson College students, we created a VR skydiving experience. The user skydives above Davidson's campus, deploys their own parachute, and lands on Chambers Lawn. 
+We created a VR skydiving experience where the user skydives above Davidson's campus, deploys their own parachute, and lands on Chambers Lawn. We gathered data about our target users through a survey and coded the experience using A-Frame and Blender.
 
 **[Read more](https://medium.com/@kydalbo/design-for-another-world-skydiving-vr-047113b53b06)**
 
