@@ -1,61 +1,60 @@
 ---
-layout: default
-title: Design Sprints
+layout: home
+title: design sprint
 permalink: /about
 ---
 
-# Welcome to my Portfolio & Design Manifesto!
+<div class="header">
+  <h1>Interfaces and Insights</h1>
+  <h2>My HCI Takeaways | Ally Smith</h2>
+</div>
 
-Explain what HCI course is, what design sprints are, explain homeworks, what will be in my manifesto…
+<nav class="menu">
+  <a href="/about.html">Design Sprints</a> | 
+  <a href="/homework.html">Homework</a> | 
+  <a href="/writing.html">Manifesto</a> | 
+  <a href="/contact.html">About Me</a>
+</nav>
 
-**Human Computer Interaction**
+---
 
-Getting Started: getting started with installing Lagrange, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
+# Welcome to My Portfolio & Design Manifesto
 
-## Design Sprints
+Explore my journey through the world of **Human-Computer Interaction (HCI)**. Discover my experiences with:
 
-Text and Formatting
+- **Design Sprints**: Agile methodologies for rapid prototyping.
+- **Individual Homeworks**: Real-world problem-solving with HCI principles.
+- **Text Formatting**: Exploring Markdown and Jekyll theming.
+- **Learning Resources**: Curated tools for learning programming and design.
 
-Individual Homeworks
+---
 
-**[Read more](https://allysmith343.github.io/smithportfolio/welcome-to-lagrange)**
+## Featured Posts
 
+### [Welcome to my Portfolio](https://allysmith343.github.io/smithportfolio/welcome-to-lagrange)
 ![Mountains](https://allysmith343.github.io/smithportfolio/assets/img/mountains.jpg)
+Explain what HCI course is, what design sprints are, and my manifesto journey.
 
 ---
 
-## Getting Started
-
-**Lagrange**
-
-Lagrange is a minimalist Jekyll theme for running a personal blog or site for free through GitHub Pages, or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in the demo site.
-
-**[Read more](https://allysmith343.github.io/smithportfolio/getting-started)**
-
+### [Getting Started](https://allysmith343.github.io/smithportfolio/getting-started)
 ![Forest](https://allysmith343.github.io/smithportfolio/assets/img/forest.jpg)
+Dive into the setup process with Lagrange, a minimalist Jekyll theme.
 
 ---
 
-## Learning Resources
-
-The beauty of computer programming is that you do not need to formally go to school to learn how to program. You can learn almost everything that you would need to know online, and for free.
-
-**[Read more](https://allysmith343.github.io/smithportfolio/learning-resources)**
-
+### [Learning Resources](https://allysmith343.github.io/smithportfolio/learning-resources)
 ![Spools](https://allysmith343.github.io/smithportfolio/assets/img/spools.jpg)
+A collection of tools and tutorials to build programming skills.
 
 ---
 
-## About Me
-
-Hiiiiii. How do I connect this to my about me link? Or I could just take this ‘post’ out.
-
-**[Read more](https://allysmith343.github.io/smithportfolio/about-the-author)**
-
-![Cutting](https://allysmith343.github.io/smithportfolio/assets/img/cutting.jpg)
+### About Me
+Visit my [About Me](https://allysmith343.github.io/smithportfolio/about-the-author) page to learn more.
 
 ---
 
-## Footer
-
-[GitHub](https://www.github.com/allysmith343) | [Email](mailto:alsmith@davidson.edu)
+<footer class="footer">
+  <a href="https://www.github.com/allysmith343" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> | 
+  <a href="mailto:alsmith@davidson.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+</footer>
