@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Interfaces and Insights: My HCI Takeaways"
-description: "Ally Smith"
-author: "Ally Smith"
+title: Design Sprints
+permalink: /about
 ---
 
 # Welcome to my Portfolio & Design Manifesto!
