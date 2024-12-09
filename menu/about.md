@@ -4,58 +4,49 @@ title: Design Sprints
 permalink: /about
 ---
 
-# Welcome to my Portfolio & Design Manifesto!
+# Design Sprints
 
-Explain what HCI course is, what design sprints are, explain homeworks, what will be in my manifesto…
+Design Sprints are group projects where we follow the design process to create a specific kind of product. Through this course, designed website, data visualizations, VR experiences, and physical visualizations. 
 
-**Human Computer Interaction**
+---
 
-Getting Started: getting started with installing Lagrange, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
+## Design for Dimensions
 
-## Design Sprints
+We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We create personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
-Text and Formatting
-
-Individual Homeworks
-
-**[Read more](https://allysmith343.github.io/smithportfolio/welcome-to-lagrange)**
+**[Read more](https://medium.com/@alsmith_29721/design-sprint-1-knotty-board-0fe8792461db)**
 
 ![Mountains](https://allysmith343.github.io/smithportfolio/assets/img/mountains.jpg)
 
 ---
 
-## Getting Started
+## Design for Understanding
 
-**Lagrange**
+We investigated the difference between analytical and persuasive data visualizations. We brainstormed analytical and persuasive visualizations for a Movie dataset using the Five Design Sheet method. Then, we coded our finalized designs using CSS and HTML.
 
-Lagrange is a minimalist Jekyll theme for running a personal blog or site for free through GitHub Pages, or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in the demo site.
-
-**[Read more](https://allysmith343.github.io/smithportfolio/getting-started)**
+**[Read more](https://medium.com/@tahopkin/databusters-turning-numbers-into-blockbusters-b8f25ee823c3)**
 
 ![Forest](https://allysmith343.github.io/smithportfolio/assets/img/forest.jpg)
 
 ---
 
-## Learning Resources
+## Design for Another World
 
-The beauty of computer programming is that you do not need to formally go to school to learn how to program. You can learn almost everything that you would need to know online, and for free.
+Based on a survey we sent out to Davidson College students, we created a VR skydiving experience. The user skydives above Davidson's campus, deploys their own parachute, and lands on Chambers Lawn. 
 
-**[Read more](https://allysmith343.github.io/smithportfolio/learning-resources)**
+**[Read more](https://medium.com/@kydalbo/design-for-another-world-skydiving-vr-047113b53b06)**
 
 ![Spools](https://allysmith343.github.io/smithportfolio/assets/img/spools.jpg)
 
 ---
 
-## About Me
+## Re-Design and Extend
 
-Hiiiiii. How do I connect this to my about me link? Or I could just take this ‘post’ out.
+To further understand the design process, we needed to learn about re-designing products and ensuring they are accessible. So, we created physical visualizations of our Design for Understanding data visualizations that are accessible for visually impaired or blind users. 
 
-**[Read more](https://allysmith343.github.io/smithportfolio/about-the-author)**
+**[Read more](https://medium.com/@hunguyen_17436/design-sprint-4-redesign-extend-movie-data-visualizations-24e78b4d421b)**
 
 ![Cutting](https://allysmith343.github.io/smithportfolio/assets/img/cutting.jpg)
 
 ---
 
-## Footer
-
-[GitHub](https://www.github.com/allysmith343) | [Email](mailto:alsmith@davidson.edu)
