@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Getting Started"
-author: "Paul Le"
+title: "Design for Dimension"
+author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
 image: forest.jpg
 ---
 
-# Lagrange
+# Design for Dimension
 
-Lagrange is a minimalist Jekyll theme for running a personal blog or site for free through [Github Pages](https://pages.github.com/), or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in [the demo site](https://lenpaul.github.io/Lagrange/). For a guide on how to deploy a Jekyll site using GitHub Pages, please check out [this article](https://paulle.ca/jekyll-tutorials/deploy-jekyll-site-github-pages).
+We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
 If you like my work then please consider supporting me with [Ko-fi](https://ko-fi.com/paulle).
 
