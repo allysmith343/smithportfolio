@@ -8,47 +8,50 @@ image: forest.jpg
 ---
 
 
-We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
+We learned how to design for a target user group by re-designing Knotty & Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
 For this Design Sprint, Alp, Devon, and I redesigned the website for Knotty & Board, a local furniture store, focusing on the needs of a specific user group. The website redesign targeted improving both the landing page and a secondary furniture page, ensuring the design could serve users of different ages and technological abilities. The goal was to create a user-friendly interface that is intuitive, visually cohesive, and budget-conscious, offering a smooth shopping experience across multiple devices: desktop, smartwatch, and large multitouch displays.
 
 
-User Group
+## User Group
 The first step of design is identifying the user group and their needs. Therefore, each of us crafted a persona that could be a target user for our website.
 
-Debby (51 years old): A teacher from Cornelius, Debby wants to modernize her mismatched furniture with cohesive pieces. She prefers high-quality but affordable furniture. While she’s good with technology like laptops and large displays, she struggles with visualizing how furniture pieces would look together.
-Catherine (22 years old): A recent graduate with a low budget, Catherine shares a living space with three roommates. She’s proficient with technology and wants to ensure the furniture fits her small space. She also cares about her roommates’ opinions and seeks a cozy, homey feel. Her main frustration is determining the right size of furniture for her space.
-Rose (74 years old): A retired accountant living alone in Huntersville, Rose has an existing collection of antique furniture. She wants new pieces that match her current collection. However, she struggles with technology and has difficulty seeing small images on screens. Affordability, knowing the origin of furniture, and continuing her collection are her key concerns.
-Despite their different needs, all personas shared common goals: budget-friendly furniture, cohesive design, and the ability to see how furniture fits into their home. We tailored our design to ensure each of these aspects was addressed for all personas.
+* **Debby (51 years old):** A teacher from Cornelius, Debby wants to modernize her mismatched furniture with cohesive pieces. She prefers high-quality but affordable furniture. While she’s good with technology like laptops and large displays, she struggles with visualizing how furniture pieces would look together.
+* **Catherine (22 years old):** A recent graduate with a low budget, Catherine shares a living space with three roommates. She’s proficient with technology and wants to ensure the furniture fits her small space. She also cares about her roommates’ opinions and seeks a cozy, homey feel. Her main frustration is determining the right size of furniture for her space.
+* **Rose (74 years old):** A retired accountant living alone in Huntersville, Rose has an existing collection of antique furniture. She wants new pieces that match her current collection. However, she struggles with technology and has difficulty seeing small images on screens. Affordability, knowing the origin of furniture, and continuing her collection are her key concerns.
+Despite their different needs, all personas shared common goals: **budget-friendly furniture, cohesive design, and the ability to see how furniture fits into their home.** We tailored our design to ensure each of these aspects was addressed for all personas.
 
-Needs & Features
+## Needs & Features
 We identified the unique needs of our personas and developed a unified approach to meet their goals while ensuring that the design catered to their diverse technological abilities, preferences, and challenges.
 
-1. Visualizing Furniture Together
+### 1. Visualizing Furniture Together
 All three personas shared a common frustration: not being able to easily visualize how furniture pieces would look together in their spaces. To address this, we introduced a “Room Preview” tool across all devices:
 
-Debby, who wants a cohesive, modern look, can upload an image of her room and virtually place selected furniture pieces within it. The website’s AI suggests additional matching pieces based on her style preferences.
-Catherine can also use this tool to visualize furniture in her small shared space. Rather than guessing the sizing she needs or measuring herself, the website will automatically input the furniture into the image of the room proportionally to how it would be in real life.
-Rose can use the same feature to see how new furniture items will match her existing antique collection. Because she is not as good with technology, the larger display would allow her to see and compare pieces better.
-2. Customizing the Search Experience
+* Debby, who wants a cohesive, modern look, can upload an image of her room and virtually place selected furniture pieces within it. The website’s AI suggests additional matching pieces based on her style preferences.
+* Catherine can also use this tool to visualize furniture in her small shared space. Rather than guessing the sizing she needs or measuring herself, the website will automatically input the furniture into the image of the room proportionally to how it would be in real life.
+* Rose can use the same feature to see how new furniture items will match her existing antique collection. Because she is not as good with technology, the larger display would allow her to see and compare pieces better.
+
+### 2. Customizing the Search Experience
 Each persona has specific requirements when browsing for furniture, and our design ensures a tailored search experience:
 
-Debby values high-quality, budget-friendly pieces that work well together. The search feature allows her to filter by style, quality, and price, while also suggesting decor that matches her existing selections.
-Catherine, on a tight budget, needs to find affordable, space-saving furniture. She can filter by price, size, and style to ensure that she only sees items that fit both her budget and her small space. The system also suggests homey, cozy furniture styles, catering to her desire to create a warm environment.
-Rose looks for vintage pieces at a low price point. Her search filters include price, material, and furniture origin, and the system highlights items that match the classic, antique aesthetic she prefers. Because Rose cares about the details of the items, there is a “Read More” link to see more information about a specific piece.
-3. Simplified Navigation
+* Debby values high-quality, budget-friendly pieces that work well together. The search feature allows her to filter by style, quality, and price, while also suggesting decor that matches her existing selections.
+* Catherine, on a tight budget, needs to find affordable, space-saving furniture. She can filter by price, size, and style to ensure that she only sees items that fit both her budget and her small space. The system also suggests homey, cozy furniture styles, catering to her desire to create a warm environment.
+* Rose looks for vintage pieces at a low price point. Her search filters include price, material, and furniture origin, and the system highlights items that match the classic, antique aesthetic she prefers. Because Rose cares about the details of the items, there is a “Read More” link to see more information about a specific piece.
+
+### 3. Simplified Navigation
 Considering the wide range of technological literacy, our design focuses on clear, simple navigation and visual accessibility:
 
-Debby, comfortable with technology, can navigate the website via a clean, intuitive layout with large images and drop-down menus.
-Catherine, being tech-savvy, can quickly access filters and adjust them for price, style, and size across different pages, with features like “Room Preview” to visualize how the furniture fits in her space.
-Rose, who is less experienced with technology, benefits from simplified search functions, making it easier for her to navigate and find pieces that fit her existing collection.
-4. Budget Management
+* Debby, comfortable with technology, can navigate the website via a clean, intuitive layout with large images and drop-down menus.
+* Catherine, being tech-savvy, can quickly access filters and adjust them for price, style, and size across different pages, with features like “Room Preview” to visualize how the furniture fits in her space.
+* Rose, who is less experienced with technology, benefits from simplified search functions, making it easier for her to navigate and find pieces that fit her existing collection.
+
+### 4. Budget Management
 Since all three personas have budget constraints, we implemented a price range filter that allows users to input their budget and view only the furniture within that range.
 
 Debby can balance quality and affordability, Catherine can stick to a tight budget as she shops for her shared space, and Rose can find reasonably priced vintage or antique-style furniture.
 By integrating these features seamlessly into each version of the Knotty & Board website, we ensure that the unique needs of Debby, Catherine, and Rose are met, providing an efficient, personalized, and enjoyable shopping experience.
 
-Design & Sketches
+## Design & Sketches
 We designed the Knotty & Board website for three types of devices: desktops, smartwatches, and large multitouch displays.
 
 Desktop Design
@@ -139,5 +142,5 @@ Landing Page
 
 Furniture Page
 
-Conclusion
+### Conclusion
 Our Knotty & Board website redesign successfully incorporates the needs of users across different ages, technological abilities, and goals. By focusing on simplicity, personalization, and interactivity, we created a shopping experience that works across desktops, smartwatches, and large multitouch display interfaces. Through iterative design, testing, and feedback, we refined the experience to provide a cohesive and budget-friendly solution for furniture shoppers. If we were to continue developing this design, we could test our prototypes with more users of diverse backgrounds. We received feedback from three senior computer science majors. Therefore, we could expand our testing to people of different ages and technological backgrounds to create even better interfaces.
