@@ -19,6 +19,7 @@ The first step of design is identifying the user group and their needs. Therefor
 * **Debby (51 years old):** A teacher from Cornelius, Debby wants to modernize her mismatched furniture with cohesive pieces. She prefers high-quality but affordable furniture. While she’s good with technology like laptops and large displays, she struggles with visualizing how furniture pieces would look together.
 * **Catherine (22 years old):** A recent graduate with a low budget, Catherine shares a living space with three roommates. She’s proficient with technology and wants to ensure the furniture fits her small space. She also cares about her roommates’ opinions and seeks a cozy, homey feel. Her main frustration is determining the right size of furniture for her space.
 * **Rose (74 years old):** A retired accountant living alone in Huntersville, Rose has an existing collection of antique furniture. She wants new pieces that match her current collection. However, she struggles with technology and has difficulty seeing small images on screens. Affordability, knowing the origin of furniture, and continuing her collection are her key concerns.
+
 Despite their different needs, all personas shared common goals: **budget-friendly furniture, cohesive design, and the ability to see how furniture fits into their home.** We tailored our design to ensure each of these aspects was addressed for all personas.
 
 ## Needs & Features
