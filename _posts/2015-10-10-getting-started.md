@@ -92,25 +92,19 @@ We designed the Knotty & Board website for three types of devices: desktops, sma
 We tested our design with Alice, James, and Jeremy. They gave us many good suggestions and asked questions that helped us refine our sketches closer to the final prototype. The following are the highlights of their feedback:
 
 ### Desktop
-#### Landing Page: 
-* The top bar is liked, but some designs felt crowded. Breaking up sections with location images worked well. A horizontal layout was confusing for some users.
+* **Landing Page:** The top bar is liked, but some designs felt crowded. Breaking up sections with location images worked well. A horizontal layout was confusing for some users.
 
-#### Furniture Page: 
-* The drop-down menus are useful, but showing too many furniture types at once made the page feel cluttered.
+* **Furniture Page:** The drop-down menus are useful, but showing too many furniture types at once made the page feel cluttered.
 
 ### Large Multitouch Display
-#### Landing Page: 
-* A simple design worked best. They liked the layout that used location images to separate content.
+* **Landing Page:** A simple design worked best. They liked the layout that used location images to separate content.
 
-#### Furniture Page: 
-* Drop-downs helped prevent clutter, and having more options displayed at once was useful. However, whether furniture pieces “match” can be subjective.
+* **Furniture Page:** Drop-downs helped prevent clutter, and having more options displayed at once was useful. However, whether furniture pieces “match” can be subjective.
 
 ### Watch
-#### Landing Page: 
-* The Apple Watch-style layout was favored for its organized information. Some screens felt either too plain or unsuitable for a watch display.
+* **Landing Page:** The Apple Watch-style layout was favored for its organized information. Some screens felt either too plain or unsuitable for a watch display.
 
-#### Furniture Page: 
-* Having back/home buttons for easy navigation was preferred. Customizable search options fit the personas’ specific needs.
+* **Furniture Page:** Having back/home buttons for easy navigation was preferred. Customizable search options fit the personas’ specific needs.
 
 Based on this feedback, we focused on simplicity, reducing clutter, and improving navigation.
 
@@ -118,25 +112,19 @@ Based on this feedback, we focused on simplicity, reducing clutter, and improvin
 Using the feedback and focusing on our target user group, we combined aspects of our different sketches to create a better end product.
 
 ### Desktop
-#### Landing Page: 
-* Rather than having the furniture and decor items displayed next to each other, we broke them up with images of the Furniture Market and Interiors Market. This provides some division and variety to the page. We made the top bar large and spread out because it is easier to read and use.
+* **Landing Page:** Rather than having the furniture and decor items displayed next to each other, we broke them up with images of the Furniture Market and Interiors Market. This provides some division and variety to the page. We made the top bar large and spread out because it is easier to read and use.
 
-#### Furniture Page: 
-* We focused on finding the balance of a customizable search because too many options can burden the user and crowd the screen. Therefore, users can only select one kind and one style of furniture to see.
+* **Furniture Page:** We focused on finding the balance of a customizable search because too many options can burden the user and crowd the screen. Therefore, users can only select one kind and one style of furniture to see.
 
 ### Large Multitouch Display
-#### Landing Page: 
-* We used the same philosophy we used in the computer landing page design. Therefore, we displayed all the information in a format that readers can easily glance at and find what they need.
+* **Landing Page:** We used the same philosophy we used in the computer landing page design. Therefore, we displayed all the information in a format that readers can easily glance at and find what they need.
 
-#### Furniture Page: 
-* Some of our sketches had the feature of using AI to tell users if the furniture they selected matched, however, this is very subjective. So, we prioritized giving suggestions for other furniture or decor that relate to the selected ones.
+* **Furniture Page:** Some of our sketches had the feature of using AI to tell users if the furniture they selected matched, however, this is very subjective. So, we prioritized giving suggestions for other furniture or decor that relate to the selected ones.
 
 ### Watch
-#### Landing Page: 
-* The watch interface is inspired by the Apple Watch’s home screen, featuring “bubbles” that link to different pages, such as the furniture page, decor page, Furniture Market location information, etc. Users can scroll around to reveal different “bubbles.” This design allows for a lot of links to be displayed, but not too crowded or small.
+* **Landing Page:** The watch interface is inspired by the Apple Watch’s home screen, featuring “bubbles” that link to different pages, such as the furniture page, decor page, Furniture Market location information, etc. Users can scroll around to reveal different “bubbles.” This design allows for a lot of links to be displayed, but not too crowded or small.
 
-#### Furniture Page: 
-* The first page users see has three links: Furniture Type, Price Range, and Size Range. Clicking on them goes to another page where the user can customize their search more. Based on the user input, suggested pieces come up. Clicking the Knotty & Board logo returns to the landing page and clicking the chair icon returns to the first furniture page.
+* **Furniture Page:** The first page users see has three links: Furniture Type, Price Range, and Size Range. Clicking on them goes to another page where the user can customize their search more. Based on the user input, suggested pieces come up. Clicking the Knotty & Board logo returns to the landing page and clicking the chair icon returns to the first furniture page.
 
 ## Visual Design
 We developed a mood board to capture the aesthetic direction of our redesign. The goal was to create a modern, stylish look without overwhelming users with too much visual noise. After analyzing competitor sites frequently visited by our target demographic, we chose:
