@@ -14,13 +14,7 @@ We learned how to design for a target user group by re-designing Knotty&Board's 
 ![alt text](https://user-images.githubusercontent.com/8409329/32631384-17107870-c56e-11e7-932f-deeb7c12e4db.png "Lagrange Demo Image")
 
 
-<iframe 
-  src="https://medium.com/@alsmith_29721/design-sprint-1-knotty-board-0fe8792461db" 
-  width="100%" 
-  height="600" 
-  style="border: none;">
-</iframe>
-
+<div class='sk-ww-medium-post' data-embed-id='25497055'></div><script src='https://widgets.sociablekit.com/medium-post/widget.js' defer></script>
 
 ## Notable features
 
