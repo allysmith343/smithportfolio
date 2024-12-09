@@ -7,7 +7,6 @@ tags: [documentation,sample]
 image: forest.jpg
 ---
 
-# Design for Dimension
 
 We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
