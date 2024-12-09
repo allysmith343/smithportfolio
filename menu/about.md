@@ -6,7 +6,7 @@ permalink: /about
 
 # Design Sprints
 
-Design Sprints are group projects where we follow the design process to create a specific kind of product. Through this course, we designed website, data visualizations, VR experiences, and physical visualizations. Summaries and links to the projects are list below in order of when we completed them. 
+Design Sprints are group projects where we follow the design process to create a specific kind of product. Through this course, we designed websites, data visualizations, VR experiences, and physical visualizations. Summaries and links to the projects are list below in order of when we completed them. 
 
 ---
 
