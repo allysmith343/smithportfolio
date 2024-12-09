@@ -10,6 +10,8 @@ image: forest.jpg
 
 We learned how to design for a target user group by re-designing Knotty & Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
+---
+
 For this Design Sprint, Alp, Devon, and I redesigned the website for Knotty & Board, a local furniture store, focusing on the needs of a specific user group. The website redesign targeted improving both the landing page and a secondary furniture page, ensuring the design could serve users of different ages and technological abilities. The goal was to create a user-friendly interface that is intuitive, visually cohesive, and budget-conscious, offering a smooth shopping experience across multiple devices: desktop, smartwatch, and large multitouch displays.
 
 
@@ -49,99 +51,111 @@ Considering the wide range of technological literacy, our design focuses on clea
 ### 4. Budget Management
 Since all three personas have budget constraints, we implemented a price range filter that allows users to input their budget and view only the furniture within that range.
 
-Debby can balance quality and affordability, Catherine can stick to a tight budget as she shops for her shared space, and Rose can find reasonably priced vintage or antique-style furniture.
+* Debby can balance quality and affordability, Catherine can stick to a tight budget as she shops for her shared space, and Rose can find reasonably priced vintage or antique-style furniture.
+
 By integrating these features seamlessly into each version of the Knotty & Board website, we ensure that the unique needs of Debby, Catherine, and Rose are met, providing an efficient, personalized, and enjoyable shopping experience.
 
 ## Design & Sketches
 We designed the Knotty & Board website for three types of devices: desktops, smartwatches, and large multitouch displays.
 
-Desktop Design
-Landing Page:
+### Desktop
+#### Landing Page
+* Large, clear images indicate the difference between the Furniture Market and Interiors Market and display their Design Services. Images of best-selling pieces help users get a feel for the kind of pieces Knotty & Board has.
+* A top navigation bar, featuring drop-down menus for furniture and decor categories helps users easily navigate to other pages and access information such as store locations, hours of operation, and their accounts.
+* A search bar is prominently placed at the top to allow quick access to specific furniture or decor items.
 
-Large, clear images indicate the difference between the Furniture Market and Interiors Market and display their Design Services. Images of best-selling pieces help users get a feel for the kind of pieces Knotty & Board has.
-A top navigation bar, featuring drop-down menus for furniture and decor categories helps users easily navigate to other pages and access information such as store locations, hours of operation, and their accounts.
-A search bar is prominently placed at the top to allow quick access to specific furniture or decor items.
-Furniture Page:
+#### Furniture Page:
+* The top navigation bar with drop-down menus continues onto the furniture page, allowing easy access to specific categories, the search bar, or other pages.
+* Users can insert specific price and size ranges as well as select a certain style of furniture they want.
+* Pieces are displayed with an image, name, size, price, and a “Read More” link. Users can click on this link for a description of the piece and where it came from.
+* The “Room Preview” tool allows users to upload an image of the room, select pieces of furniture, and see how the items match each other, fit in the room, or match the room. The website will add items proportionally to ensure the sizing is easy to determine.
 
-The top navigation bar with drop-down menus continues onto the furniture page, allowing easy access to specific categories, the search bar, or other pages.
-Users can insert specific price and size ranges as well as select a certain style of furniture they want.
-Pieces are displayed with an image, name, size, price, and a “Read More” link. Users can click on this link for a description of the piece and where it came from.
-The “Room Preview” tool allows users to upload an image of the room, select pieces of furniture, and see how the items match each other, fit in the room, or match the room. The website will add items proportionally to ensure the sizing is easy to determine.
+### Large Multitouch Display
+#### Landing Page:
+* This design is very similar to the desktop design. With such a large display, overloading the home page may overwhelm the user. Therefore, images of the two locations, popular items, and information about the Design Service ensure users can find what they are looking for.
+* The top navigation bar with drop-down menus continues in this display
 
-Large Multitouch Display Design
-Landing Page:
+#### Furniture Page:
+* Similar to the desktop display, customizable searches can be done with drop-down menu selections and inputting price and size ranges. Based on the information, furniture pieces will be displayed.
+* The “Room Preview” tool is more interactive on the large display. A camera on the top of the large multitouch display can display the room in real-time. Users can drag items into the room and the website will place them proportionally. Users can more easily drag the furniture into different places in the room and see how it looks.
+* Using information from the customizable search, selected items, and how the room looks, the website suggests other furniture and decor items.
 
-This design is very similar to the desktop design. With such a large display, overloading the home page may overwhelm the user. Therefore, images of the two locations, popular items, and information about the Design Service ensure users can find what they are looking for.
-The top navigation bar with drop-down menus continues in this display
-Furniture Page:
+### Watch
+#### Landing Page:
+* Displaying information on such a small screen can get cramped, so many of the sketches use icons to display a link that will take the user to their desired page.
 
-Similar to the desktop display, customizable searches can be done with drop-down menu selections and inputting price and size ranges. Based on the information, furniture pieces will be displayed.
-The “Room Preview” tool is more interactive on the large display. A camera on the top of the large multitouch display can display the room in real-time. Users can drag items into the room and the website will place them proportionally. Users can more easily drag the furniture into different places in the room and see how it looks.
-Using information from the customizable search, selected items, and how the room looks, the website suggests other furniture and decor items.
+#### Furniture Page:
+* To ensure some customization of the search, users select which kind of furniture they are looking for, and popular pieces will come up. As users scroll through, they can add items to their cart.
+* Using their phone, users could hold up their camera to the room they need furniture for. Then, they can send the selected furniture from their watch to show up on their phone screen. So, they can see how the furniture looks in the room.
 
-
-Watch Design
-Landing Page:
-
-Displaying information on such a small screen can get cramped, so many of the sketches use icons to display a link that will take the user to their desired page.
-Furniture Page:
-
-To ensure some customization of the search, users select which kind of furniture they are looking for, and popular pieces will come up. As users scroll through, they can add items to their cart.
-Using their phone, users could hold up their camera to the room they need furniture for. Then, they can send the selected furniture from their watch to show up on their phone screen. So, they can see how the furniture looks in the room.
-
-Testing
+## Testing
 We tested our design with Alice, James, and Jeremy. They gave us many good suggestions and asked questions that helped us refine our sketches closer to the final prototype. The following are the highlights of their feedback:
 
-Desktop
-Landing Page: The top bar is liked, but some designs felt crowded. Breaking up sections with location images worked well. A horizontal layout was confusing for some users.
-Furniture Page: The drop-down menus are useful, but showing too many furniture types at once made the page feel cluttered.
-Large Multitouch Display
-Landing Page: A simple design worked best. They liked the layout that used location images to separate content.
-Furniture Page: Drop-downs helped prevent clutter, and having more options displayed at once was useful. However, whether furniture pieces “match” can be subjective.
-Watch
-Landing Page: The Apple Watch-style layout was favored for its organized information. Some screens felt either too plain or unsuitable for a watch display.
-Furniture Page: Having back/home buttons for easy navigation was preferred. Customizable search options fit the personas’ specific needs.
+### Desktop
+#### Landing Page: 
+* The top bar is liked, but some designs felt crowded. Breaking up sections with location images worked well. A horizontal layout was confusing for some users.
+#### Furniture Page: 
+* The drop-down menus are useful, but showing too many furniture types at once made the page feel cluttered.
+
+### Large Multitouch Display
+#### Landing Page: 
+* A simple design worked best. They liked the layout that used location images to separate content.
+#### Furniture Page: 
+* Drop-downs helped prevent clutter, and having more options displayed at once was useful. However, whether furniture pieces “match” can be subjective.
+
+### Watch
+#### Landing Page: 
+* The Apple Watch-style layout was favored for its organized information. Some screens felt either too plain or unsuitable for a watch display.
+#### Furniture Page: 
+* Having back/home buttons for easy navigation was preferred. Customizable search options fit the personas’ specific needs.
+
 Based on this feedback, we focused on simplicity, reducing clutter, and improving navigation.
 
-Final Sketches
+## Final Sketches
 Using the feedback and focusing on our target user group, we combined aspects of our different sketches to create a better end product.
 
-Desktop
-Landing Page: Rather than having the furniture and decor items displayed next to each other, we broke them up with images of the Furniture Market and Interiors Market. This provides some division and variety to the page. We made the top bar large and spread out because it is easier to read and use.
-Furniture Page: We focused on finding the balance of a customizable search because too many options can burden the user and crowd the screen. Therefore, users can only select one kind and one style of furniture to see.
+### Desktop
+#### Landing Page: 
+* Rather than having the furniture and decor items displayed next to each other, we broke them up with images of the Furniture Market and Interiors Market. This provides some division and variety to the page. We made the top bar large and spread out because it is easier to read and use.
+#### Furniture Page: 
+* We focused on finding the balance of a customizable search because too many options can burden the user and crowd the screen. Therefore, users can only select one kind and one style of furniture to see.
 
-Large Multitouch Display
-Landing Page: We used the same philosophy we used in the computer landing page design. Therefore, we displayed all the information in a format that readers can easily glance at and find what they need.
-Furniture Page: Some of our sketches had the feature of using AI to tell users if the furniture they selected matched, however, this is very subjective. So, we prioritized giving suggestions for other furniture or decor that relate to the selected ones.
+### Large Multitouch Display
+#### Landing Page: 
+* We used the same philosophy we used in the computer landing page design. Therefore, we displayed all the information in a format that readers can easily glance at and find what they need.
+#### Furniture Page: 
+* Some of our sketches had the feature of using AI to tell users if the furniture they selected matched, however, this is very subjective. So, we prioritized giving suggestions for other furniture or decor that relate to the selected ones.
 
-Watch
-Landing Page: The watch interface is inspired by the Apple Watch’s home screen, featuring “bubbles” that link to different pages, such as the furniture page, decor page, Furniture Market location information, etc. Users can scroll around to reveal different “bubbles.” This design allows for a lot of links to be displayed, but not too crowded or small.
-Furniture Page: The first page users see has three links: Furniture Type, Price Range, and Size Range. Clicking on them goes to another page where the user can customize their search more. Based on the user input, suggested pieces come up. Clicking the Knotty & Board logo returns to the landing page and clicking the chair icon returns to the first furniture page.
+### Watch
+#### Landing Page: 
+* The watch interface is inspired by the Apple Watch’s home screen, featuring “bubbles” that link to different pages, such as the furniture page, decor page, Furniture Market location information, etc. Users can scroll around to reveal different “bubbles.” This design allows for a lot of links to be displayed, but not too crowded or small.
+#### Furniture Page: 
+* The first page users see has three links: Furniture Type, Price Range, and Size Range. Clicking on them goes to another page where the user can customize their search more. Based on the user input, suggested pieces come up. Clicking the Knotty & Board logo returns to the landing page and clicking the chair icon returns to the first furniture page.
 
-Visual Design
+## Visual Design
 We developed a mood board to capture the aesthetic direction of our redesign. The goal was to create a modern, stylish look without overwhelming users with too much visual noise. After analyzing competitor sites frequently visited by our target demographic, we chose:
 
-Color Palette: Neutral tones like sage green, terracotta, and natural browns create a rustic, warm feel without distracting from the furniture.
-Font: We opted for Times New Roman to give the site a more elegant feel while maintaining readability.
-Visual Simplicity: Given the personas’ focus on the furniture itself, we kept backgrounds clean and simple to avoid overwhelming users with design elements.
+* **Color Palette:** Neutral tones like sage green, terracotta, and natural browns create a rustic, warm feel without distracting from the furniture.
+* **Font:** We opted for Times New Roman to give the site a more elegant feel while maintaining readability.
+* **Visual Simplicity:** Given the personas’ focus on the furniture itself, we kept backgrounds clean and simple to avoid overwhelming users with design elements.
 
-Prototypes
+## Prototypes
 We created prototypes for desktops, smartwatches, and large multitouch display interfaces using Figma. These prototypes were created with a combination of our target users’ needs, many sketches, and feedback from our classmates. Here is the link to our Figma page and images below.
 
-Desktop
-Landing Page
+### Desktop
+#### Landing Page
 
-Furniture Page
+#### Furniture Page
 
-Large Multitouch Display
-Landing Page
+### Large Multitouch Display
+#### Landing Page
 
-Furniture Page
+#### Furniture Page
 
-Watch
-Landing Page
+### Watch
+#### Landing Page
 
-Furniture Page
+#### Furniture Page
 
-### Conclusion
+## Conclusion
 Our Knotty & Board website redesign successfully incorporates the needs of users across different ages, technological abilities, and goals. By focusing on simplicity, personalization, and interactivity, we created a shopping experience that works across desktops, smartwatches, and large multitouch display interfaces. Through iterative design, testing, and feedback, we refined the experience to provide a cohesive and budget-friendly solution for furniture shoppers. If we were to continue developing this design, we could test our prototypes with more users of diverse backgrounds. We received feedback from three senior computer science majors. Therefore, we could expand our testing to people of different ages and technological backgrounds to create even better interfaces.
