@@ -11,9 +11,6 @@ image: forest.jpg
 We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
 
-![alt text](https://user-images.githubusercontent.com/8409329/32631384-17107870-c56e-11e7-932f-deeb7c12e4db.png "Lagrange Demo Image")
-
-
 <div class='sk-ww-medium-post' data-embed-id='25497055'></div><script src='https://widgets.sociablekit.com/medium-post/widget.js' defer></script>
 
 ## Notable features
