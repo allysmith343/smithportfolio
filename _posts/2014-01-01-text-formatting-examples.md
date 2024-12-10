@@ -24,7 +24,7 @@ Click the hotlink to see the final designs:
 
 ## The Data Set
 
-The dataset we utilized was pulled from Kaggle and consists of several key variables related to movies, offering insights into their production, financial performance, and public reception. The variables that we used are below with a short description of each:
+The dataset we utilized was pulled from [Kaggle](https://www.kaggle.com/datasets/mohammedalsubaie/movies "Kaggle") and consists of several key variables related to movies, offering insights into their production, financial performance, and public reception. The variables that we used are below with a short description of each:
 
 * **title:** The movie's name.
 * **release_year:** The year when the movie was officially released to the public.
@@ -40,7 +40,7 @@ Initially, the dataset consisted of nearly 1 million film productions from 1913 
 
 Additionally, we consolidated the genre classifications. The original data allowed each movie to be ranked into multiple genres. To simplify and create more easily readable visualizations, we selected the eight most prevalent genres and filtered out movies that did not fall into any of these categories. This consolidation ensured that the dataset remained manageable and lead to more interesting analysis.
 
-After applying these cleaning steps, we reduced the dataset to approximately 10,000 movies (which can be seen here: Cleaned Data), making it more suitable for visualization and analysis. This cleaned dataset was then used to create both unbiased visualizations for neutral interpretation and more targeted visuals to steer users toward specific conclusions, as part of our exploration into how data representation can influence perception.
+After applying these cleaning steps, we reduced the dataset to approximately 10,000 movies (which can be seen here: [Cleaned Dataset](https://docs.google.com/spreadsheets/d/1FT5w3uxiUhtdr0-SND7KAYCT5Fd3j3a7/edit?gid=598829846#gid=598829846 "Cleaned Dataset")), making it more suitable for visualization and analysis. This cleaned dataset was then used to create both unbiased visualizations for neutral interpretation and more targeted visuals to steer users toward specific conclusions, as part of our exploration into how data representation can influence perception.
 
 ## The Task
 Using this dataset, we had two layers to the assignment: first, to create visualizations that would allow users to analyze the data in an objective and unbiased manner, providing clear and transparent insights into movie production and performance and allowing the user to provide some sort of customization over their inquiries.
@@ -173,7 +173,7 @@ Our persuasion graphs had a clear and focused purpose: to emphasize America’s 
 In contrast, our analytical graphs were designed to give users the freedom to explore the data on their own. These graphs offered a range of insights, from production trends to profitability and popularity, without directing users toward a specific conclusion. Instead, they provided interactive tools and genre filters, that allowed users to tailor their exploration and draw their own insights from the data. This approach empowered users to analyze trends and relationships in the film industry based on their interests.
 
 ## Demo Video
-Click here to see the demo video for clearer instructions on how to use the visualizations!
+Click [here](https://drive.google.com/drive/folders/1sFyLOzDoHqJ9JUsMOP8ityJPsJo7JUhR "here") to see the demo video for clearer instructions on how to use the visualizations!
 
 Click the hotlink to see the final designs: 
 [Final Designs](https://allysmith.dcreate.domains/ "Final Designs")
