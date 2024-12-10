@@ -4,7 +4,7 @@ title: "Design Manifesto"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
-image: manpic.jpg
+image: manpic.png
 ---
 
 design manifesto
