@@ -4,7 +4,7 @@ title: "Design for Understanding"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
-image: cards.jpg
+image: ds2.webp
 ---
 
 We investigated the difference between analytical and persuasive data visualizations. We brainstormed analytical and persuasive visualizations for a Movie dataset using the Five Design Sheet method. Then, we coded our finalized designs using CSS and HTML.

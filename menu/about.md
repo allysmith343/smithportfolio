@@ -26,7 +26,7 @@ We investigated the difference between analytical and persuasive data visualizat
 
 **[Read more](https://allysmith343.github.io/smithportfolio/text-formatting-examples)**
 
-![Forest](https://allysmith343.github.io/smithportfolio/assets/img/forest.jpg)
+![Design Sprint 2 Photo](https://allysmith343.github.io/smithportfolio/assets/img/ds2.webp)
 
 ---
 
