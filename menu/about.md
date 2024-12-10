@@ -46,7 +46,7 @@ To further understand the design process, we needed to learn about re-designing 
 
 **[Read more](https://allysmith343.github.io/smithportfolio/about-the-author)**
 
-![Cutting](https://allysmith343.github.io/smithportfolio/assets/img/cutting.jpg)
+![Design Sprint 4 Photo](https://allysmith343.github.io/smithportfolio/assets/img/ds4.jpg)
 
 ---
 
