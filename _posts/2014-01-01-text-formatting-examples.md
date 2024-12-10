@@ -20,7 +20,7 @@ Hold onto your popcorn, because movie data analysis just got that much better! I
 We are excited to share a series of visuals for users to use and learn more about various aspects of movie production, profits, and popularity!
 
 Click the hotlink to see the final designs: 
-[Learn Markdown](https://allysmith.dcreate.domains/ "Final Designs")
+[Final Designs](https://allysmith.dcreate.domains/ "Final Designs")
 
 ## The Data Set
 
@@ -176,7 +176,7 @@ In contrast, our analytical graphs were designed to give users the freedom to ex
 Click here to see the demo video for clearer instructions on how to use the visualizations!
 
 Click the hotlink to see the final designs: 
-[Learn Markdown](https://allysmith.dcreate.domains/ "Final Designs")
+[Final Designs](https://allysmith.dcreate.domains/ "Final Designs")
 
 ## Conclusion
 In this project, we took on the challenge of turning a complicated set of movie data into visuals that anyone could enjoy both in an analytical and predetermined persuasive way. We created a series of visuals (pie charts, bar graphs, scatter plots, and maps) that let users dive deep into trends over time and across genres. With interactive features like sliders and filters, we made it easy for users to play director and pull out the key scenes from all that data. In the end, we think we’ve turned this data from a boring B-movie into an Oscar-worthy hit. That’s a wrap!
