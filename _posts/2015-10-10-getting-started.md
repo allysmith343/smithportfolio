@@ -14,8 +14,7 @@ We learned how to design for a target user group by re-designing Knotty & Board'
 
 For this Design Sprint, Alp, Devon, and I redesigned the website for Knotty & Board, a local furniture store, focusing on the needs of a specific user group. The website redesign targeted improving both the landing page and a secondary furniture page, ensuring the design could serve users of different ages and technological abilities. The goal was to create a user-friendly interface that is intuitive, visually cohesive, and budget-conscious, offering a smooth shopping experience across multiple devices: desktop, smartwatch, and large multitouch displays.
 
-![Knotty & Board Logo](assets/img/kblogo.webp "Knotty & Board Logo"):
-<!-- ![Beautiful mountains](assets/img/mountains.jpg "Mountain View") -->
+![Knotty & Board Logo](assets/img/kblogo.webp "Knotty & Board Logo")
 
 ## User Group
 The first step of design is identifying the user group and their needs. Therefore, each of us crafted a persona that could be a target user for our website.
@@ -72,6 +71,8 @@ We designed the Knotty & Board website for three types of devices: desktops, sma
 * Pieces are displayed with an image, name, size, price, and a “Read More” link. Users can click on this link for a description of the piece and where it came from.
 * The “Room Preview” tool allows users to upload an image of the room, select pieces of furniture, and see how the items match each other, fit in the room, or match the room. The website will add items proportionally to ensure the sizing is easy to determine.
 
+![Desktop Sketches](assets/img/desktopsketches.webp "Desktop Sketches")
+
 ### Large Multitouch Display
 #### Landing Page:
 * This design is very similar to the desktop design. With such a large display, overloading the home page may overwhelm the user. Therefore, images of the two locations, popular items, and information about the Design Service ensure users can find what they are looking for.
@@ -82,6 +83,9 @@ We designed the Knotty & Board website for three types of devices: desktops, sma
 * The “Room Preview” tool is more interactive on the large display. A camera on the top of the large multitouch display can display the room in real-time. Users can drag items into the room and the website will place them proportionally. Users can more easily drag the furniture into different places in the room and see how it looks.
 * Using information from the customizable search, selected items, and how the room looks, the website suggests other furniture and decor items.
 
+![Multitouch Landing Page Sketches](assets/img/multitouchsketches.webp "Multitouch Landing Page Sketches")
+![Multitouch Furniture Page Sketches](assets/img/multitouchsketches2.webp "Multitouch Furniture Page Sketches")
+
 ### Watch
 #### Landing Page:
 * Displaying information on such a small screen can get cramped, so many of the sketches use icons to display a link that will take the user to their desired page.
@@ -89,6 +93,8 @@ We designed the Knotty & Board website for three types of devices: desktops, sma
 #### Furniture Page:
 * To ensure some customization of the search, users select which kind of furniture they are looking for, and popular pieces will come up. As users scroll through, they can add items to their cart.
 * Using their phone, users could hold up their camera to the room they need furniture for. Then, they can send the selected furniture from their watch to show up on their phone screen. So, they can see how the furniture looks in the room.
+
+![Watch Sketches](assets/img/watchsketches.webp "Watch Sketches")
 
 ## Testing
 We tested our design with Alice, James, and Jeremy. They gave us many good suggestions and asked questions that helped us refine our sketches closer to the final prototype. The following are the highlights of their feedback:
@@ -118,15 +124,21 @@ Using the feedback and focusing on our target user group, we combined aspects of
 
 * **Furniture Page:** We focused on finding the balance of a customizable search because too many options can burden the user and crowd the screen. Therefore, users can only select one kind and one style of furniture to see.
 
+![Desktop Final Sketches](assets/img/desktopfinalsketch.webp "Desktop Final Sketches")
+
 ### Large Multitouch Display
 * **Landing Page:** We used the same philosophy we used in the computer landing page design. Therefore, we displayed all the information in a format that readers can easily glance at and find what they need.
 
 * **Furniture Page:** Some of our sketches had the feature of using AI to tell users if the furniture they selected matched, however, this is very subjective. So, we prioritized giving suggestions for other furniture or decor that relate to the selected ones.
 
+![Multitouch Final Sketches](assets/img/multitouchfinalsketch.webp "Multitouch Final Sketches")
+
 ### Watch
 * **Landing Page:** The watch interface is inspired by the Apple Watch’s home screen, featuring “bubbles” that link to different pages, such as the furniture page, decor page, Furniture Market location information, etc. Users can scroll around to reveal different “bubbles.” This design allows for a lot of links to be displayed, but not too crowded or small.
 
 * **Furniture Page:** The first page users see has three links: Furniture Type, Price Range, and Size Range. Clicking on them goes to another page where the user can customize their search more. Based on the user input, suggested pieces come up. Clicking the Knotty & Board logo returns to the landing page and clicking the chair icon returns to the first furniture page.
+
+![Watch Final Sketches](assets/img/watchfinalsketch.webp "Watch Final Sketches")
 
 ## Visual Design
 We developed a mood board to capture the aesthetic direction of our redesign. The goal was to create a modern, stylish look without overwhelming users with too much visual noise. After analyzing competitor sites frequently visited by our target demographic, we chose:
@@ -135,23 +147,37 @@ We developed a mood board to capture the aesthetic direction of our redesign. Th
 * **Font:** We opted for Times New Roman to give the site a more elegant feel while maintaining readability.
 * **Visual Simplicity:** Given the personas’ focus on the furniture itself, we kept backgrounds clean and simple to avoid overwhelming users with design elements.
 
+![Mood Board](assets/img/moodboard.webp "Mood Board")
+
 ## Prototypes
 We created prototypes for desktops, smartwatches, and large multitouch display interfaces using Figma. These prototypes were created with a combination of our target users’ needs, many sketches, and feedback from our classmates. Here is the link to our Figma page and images below.
 
 ### Desktop
 #### Landing Page
 
+![Desktop Landing Page Prototype](assets/img/desktoplandingproto.webp "Desktop Landing Page Prototype")
+
 #### Furniture Page
+
+![Desktop Furniture Page Prototype](assets/img/ds1.webp "Desktop Furniture Page Prototype")
 
 ### Large Multitouch Display
 #### Landing Page
 
+![Multitouch Landing Page Prototype](assets/img/multitouchlandingproto.webp "Multitouch Landing Page Prototype")
+
 #### Furniture Page
+
+![Multitouch Furniture Page Prototype](assets/img/multifurnitureproto.webp "Multitouch Furniture Page Prototype")
 
 ### Watch
 #### Landing Page
 
+![Watch Landing Page Prototype](assets/img/watchlandproto.webp "Watch Landing Page Prototype")
+
 #### Furniture Page
+
+![Watch Furniture Page Prototype](assets/img/watchfurnitureproto.webp "Watch Furniture Page Prototype")
 
 ## Conclusion
 Our Knotty & Board website redesign successfully incorporates the needs of users across different ages, technological abilities, and goals. By focusing on simplicity, personalization, and interactivity, we created a shopping experience that works across desktops, smartwatches, and large multitouch display interfaces. Through iterative design, testing, and feedback, we refined the experience to provide a cohesive and budget-friendly solution for furniture shoppers. If we were to continue developing this design, we could test our prototypes with more users of diverse backgrounds. We received feedback from three senior computer science majors. Therefore, we could expand our testing to people of different ages and technological backgrounds to create even better interfaces.
