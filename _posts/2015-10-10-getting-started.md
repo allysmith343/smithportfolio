@@ -4,7 +4,7 @@ title: "Design for Dimension"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
-image: forest.jpg
+image: ds1.webp
 ---
 
 
