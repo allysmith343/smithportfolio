@@ -4,7 +4,7 @@ title: "Re-Design and Extend"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
-image: cutting.jpg
+image: IMG_5167.heic
 ---
 
 To further understand the design process, we needed to learn about re-designing products and ensuring they are accessible. So, we created physical visualizations of our Design for Understanding data visualizations that are accessible for visually impaired or blind users.
