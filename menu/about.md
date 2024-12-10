@@ -14,7 +14,7 @@ Design Sprints are group projects where we follow the design process to create a
 
 We learned how to design for a target user group by re-designing Knotty&Board's website to fit 3 different screen sizes. We created personas to identify our users, drew many sketches, received feedback on our ideas, and made our final prototypes on Figma.
 
-**[Read more](https://medium.com/@alsmith_29721/design-sprint-1-knotty-board-0fe8792461db)**
+**[Read more](https://allysmith343.github.io/smithportfolio/getting-started)**
 
 ![Mountains](https://allysmith343.github.io/smithportfolio/assets/img/mountains.jpg)
 
@@ -24,7 +24,7 @@ We learned how to design for a target user group by re-designing Knotty&Board's 
 
 We investigated the difference between analytical and persuasive data visualizations. We brainstormed analytical and persuasive visualizations for a Movie dataset using the Five Design Sheet method. Then, we coded our finalized designs using CSS and HTML.
 
-**[Read more](https://medium.com/@tahopkin/databusters-turning-numbers-into-blockbusters-b8f25ee823c3)**
+**[Read more](https://allysmith343.github.io/smithportfolio/text-formatting-examples)**
 
 ![Forest](https://allysmith343.github.io/smithportfolio/assets/img/forest.jpg)
 
@@ -34,7 +34,7 @@ We investigated the difference between analytical and persuasive data visualizat
 
 We created a VR skydiving experience where the user skydives above Davidson's campus, deploys their own parachute, and lands on Chambers Lawn. We gathered data about our target users through a survey and coded the experience using A-Frame and Blender.
 
-**[Read more](https://medium.com/@kydalbo/design-for-another-world-skydiving-vr-047113b53b06)**
+**[Read more](https://allysmith343.github.io/smithportfolio/learning-resources)**
 
 ![Spools](https://allysmith343.github.io/smithportfolio/assets/img/spools.jpg)
 
@@ -44,7 +44,7 @@ We created a VR skydiving experience where the user skydives above Davidson's ca
 
 To further understand the design process, we needed to learn about re-designing products and ensuring they are accessible. So, we created physical visualizations of our Design for Understanding data visualizations that are accessible for visually impaired or blind users. 
 
-**[Read more](https://medium.com/@hunguyen_17436/design-sprint-4-redesign-extend-movie-data-visualizations-24e78b4d421b)**
+**[Read more](https://allysmith343.github.io/smithportfolio/about-the-author)**
 
 ![Cutting](https://allysmith343.github.io/smithportfolio/assets/img/cutting.jpg)
 
