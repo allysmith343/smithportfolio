@@ -16,7 +16,7 @@ We learned how to design for a target user group by re-designing Knotty & Board'
 
 **[Read more](https://allysmith343.github.io/smithportfolio/getting-started)**
 
-![Mountains](https://allysmith343.github.io/smithportfolio/assets/img/mountains.jpg)
+![Design Sprint 1 Photo](https://allysmith343.github.io/smithportfolio/assets/img/ds1.webp)
 
 ---
 
