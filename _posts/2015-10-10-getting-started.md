@@ -14,6 +14,8 @@ We learned how to design for a target user group by re-designing Knotty & Board'
 
 For this Design Sprint, Alp, Devon, and I redesigned the website for Knotty & Board, a local furniture store, focusing on the needs of a specific user group. The website redesign targeted improving both the landing page and a secondary furniture page, ensuring the design could serve users of different ages and technological abilities. The goal was to create a user-friendly interface that is intuitive, visually cohesive, and budget-conscious, offering a smooth shopping experience across multiple devices: desktop, smartwatch, and large multitouch displays.
 
+![Knotty & Board Logo](assets/img/kblogo.webp "Knotty & Board Logo"):
+<!-- ![Beautiful mountains](assets/img/mountains.jpg "Mountain View") -->
 
 ## User Group
 The first step of design is identifying the user group and their needs. Therefore, each of us crafted a persona that could be a target user for our website.
