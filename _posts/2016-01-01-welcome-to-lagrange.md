@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Design Manifesto!"
+title: "Design Manifesto"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
