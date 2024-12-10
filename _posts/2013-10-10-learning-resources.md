@@ -4,7 +4,7 @@ title: "Design for Another World"
 author: "Ally Smith"
 categories: journal
 tags: [documentation,sample]
-image: spools.jpg
+image: ds3.webp
 ---
 
 We created a VR skydiving experience where the user skydives above Davidson’s campus, deploys their own parachute, and lands on Chambers Lawn. We gathered data about our target users through a survey and coded the experience using A-Frame and Blender.
