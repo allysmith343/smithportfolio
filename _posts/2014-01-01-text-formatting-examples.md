@@ -13,6 +13,8 @@ We investigated the difference between analytical and persuasive data visualizat
 
 Hold onto your popcorn, because movie data analysis just got that much better! In this project, we sought to provide users with the ability to analyze a number of movie performance metrics in both an analytical and persuasive way. We wanted to provide users the ability to explore how different genres stack up over time, which movies won hearts (and wallets), and how budgets really influence those blockbuster hits. This post shows our team’s process as we built dynamic visuals to display this data.
 
+![Desktop Sketches](assets/img/desktopsketches.webp "Desktop Sketches")
+
 ## The Designs
 
 We are excited to share a series of visuals for users to use and learn more about various aspects of movie production, profits, and popularity!
