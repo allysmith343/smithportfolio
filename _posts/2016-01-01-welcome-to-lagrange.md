@@ -7,4 +7,14 @@ tags: [documentation,sample]
 image: hciman.jpeg
 ---
 
-design manifesto
+## Introduction
+
+## Understand Target Users
+
+## Understand the Data
+
+## Brainstorming
+
+## Feedback & Evaluation
+
+## Universal Design & Accessibility
