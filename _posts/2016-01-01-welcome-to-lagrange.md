@@ -35,7 +35,7 @@ add pic here
 ## Brainstorming
 Throughout the design process, we brainstormed many ideas that we sketched out and combined to create a final product. In Design for Understanding, we used the 5 Design Sheet methodology to create our final data visualizations. The first sheet is an overview of the dataset and many miniature sketches that we combine and refine. Using the first sheet, we make three sheets that expand on miniature ideas. The fifth sheet combines the ideas of the four sheets to form a final design. This methodology ensures we understand the data, brainstorm many ideas, and create a product that is user-friendly and represents what we want it to. 
 
-![DS 2](assets/img/ds2sheet12.webp "DS 2")
+![DS 2](assets/img/IMG_0333.jpg "DS 2")
 
 In Design for Dimensions, we drew over 30 sketches. While brainstorming, it was important to have a high quantity of ideas at first to have a good base to build off of. During the design process, it was beneficial to brainstorm individually and then combine ideas as a team afterward. It was also helpful to surround oneself in the context of the product, understanding how it will be used and who will use it. Overall, our brainstorming approach enabled us to balance creativity with practicality, resulting in designs that effectively addressed user needs.
 
