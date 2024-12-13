@@ -36,7 +36,7 @@ We created a VR skydiving experience where the user skydives above Davidson's ca
 
 **[Read more](https://allysmith343.github.io/smithportfolio/learning-resources)**
 
-![Design Sprint 3 Photo](https://allysmith343.github.io/smithportfolio/assets/img/ds3.webp)
+![Design Sprint 3 Photo](https://allysmith343.github.io/smithportfolio/assets/img/chambers.png)
 
 ---
 
