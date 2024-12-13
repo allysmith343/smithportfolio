@@ -30,7 +30,7 @@ In Design for Understanding, we dove into a dataset about movies. This dataset i
 
 We also needed to interpret data relating to the target user group and feedback. As mentioned above, in Design for Another World, we gathered user data through a survey. By interpreting that data, we understood that many possible users are afraid of skydiving, but are interested in it. We also made design choices based on the data we collected with the survey such as landing on Chambers Lawn. In each of the Design Sprints, we gathered feedback from people about our designs either from general comments or usability testing. For Re-Design and Extend, we conducted usability testing on the data visualizations for Design for Understanding. We gave four people tasks to complete and took notes on how they completed the tasks and if they were successful. After interpreting this data, we designed our accessible physical visualizations. We made design decisions based on survey data and usability test data to create better products for our users.
 
-add pic here
+![DS 2](assets/img/chambers.png "DS 2")
 
 ## Brainstorming
 Throughout the design process, we brainstormed many ideas that we sketched out and combined to create a final product. In Design for Understanding, we used the 5 Design Sheet methodology to create our final data visualizations. The first sheet is an overview of the dataset and many miniature sketches that we combine and refine. Using the first sheet, we make three sheets that expand on miniature ideas. The fifth sheet combines the ideas of the four sheets to form a final design. This methodology ensures we understand the data, brainstorm many ideas, and create a product that is user-friendly and represents what we want it to. 
