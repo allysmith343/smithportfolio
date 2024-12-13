@@ -8,6 +8,11 @@ image: hciman.jpeg
 ---
 
 Throughout our design process, we prioritized a user-centered approach, ensuring that our designs catered to the specific needs, abilities, and preferences of our target user groups. From creating personas to conducting surveys and usability testing, we used diverse methods to understand our users and design with them in mind. Our process involved brainstorming extensively, analyzing data thoroughly, seeking feedback iteratively, and incorporating universal design principles to enhance accessibility. This reflection highlights how these practices shaped the development of our projects, resulting in meaningful and user-friendly products. Throughout this course, we developed a variety of products, yet I believe the following five key points encapsulate the essence of a successful design process for any type of product.
+* Understand Target Users
+* Understand the Data
+* Brainstorm Thoroughly
+* Feedback & Evaluation
+* Universal Design & Accessibility
 
 ## Understand Target Users
 Throughout the design process, from beginning to end, we needed to focus on the [target user group](https://drive.google.com/file/d/1nQvmNzbUI3KnNwkuFJlBy6Q8O51kJqxu/view). In Design for Dimensions, each group member created a persona detailing a potential Knotty & Board customer. When we brought the three personas together, we brainstormed features we wanted the website to include based on the target users’ needs, abilities, and current problem points. For example, our personas struggled to imagine how furniture or decor pieces would fit and look in their homes. Therefore, we created a feature where users can upload a picture of their room and select an item from the website to see how it fits in or matches their room. Furthermore, our persona Debby focused on whether the pieces matched. So, we added a “Suggestions” area that would use AI to find furniture and decor pieces that matched her room. Finally, all three personas focused on affordability. As a result, we made sure users could insert a price range to only see items they could afford. Using our personas and focusing on our target users, we were able to design a more useful website on three different screen sizes. 
@@ -31,7 +36,7 @@ We also needed to interpret data relating to the target user group and feedback.
 
 ![DS 2](assets/img/chambers.png "DS 2")
 
-## Brainstorming
+## Brainstorm Thoroughly
 Throughout the design process, we brainstormed many ideas that we sketched out and combined to create a final product. In Design for Understanding, we used the [5 Design Sheet](https://kawilliams.github.io/teaching/hci/papers/RobertsHeadleandRitsos-FiveDesignSheet.pdf) methodology to create our final data visualizations. The first sheet is an overview of the dataset and many miniature sketches that we combine and refine. Using the first sheet, we make three sheets that expand on miniature ideas. The fifth sheet combines the ideas of the four sheets to form a final design. This methodology ensures we understand the data, brainstorm many ideas, and create a product that is user-friendly and represents what we want it to. 
 
 ![DS 2](assets/img/IMG_0333.jpg "DS 2")
