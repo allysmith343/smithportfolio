@@ -7,7 +7,6 @@ tags: [documentation,sample]
 image: hciman.jpeg
 ---
 
-## Introduction
 Throughout our design process, we prioritized a user-centered approach, ensuring that our designs were not only innovative but also catered to the specific needs, abilities, and preferences of our targer user groups. From creating personas to conducting surveys and usability testing, we used diverse methods to understand our users and design with them in mind. Our process involved brainstorming extensively, analyzing data thoroughly, seeking feedback iteratively, and incorporating universal design principles to enhance accessibility. This reflection highlights how these practices shaped the development of our projects, resulting in meaningful and user-friendly products. Throughout this course, we developed a variety of diverse products, yet I believe the following five key points encapsulate the essence of a successful design process for any type of product.
 
 ## Understand Target Users
