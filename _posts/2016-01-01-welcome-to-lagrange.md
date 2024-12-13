@@ -54,7 +54,7 @@ The final point that defined my design process is accessibility. As someone from
 * Tactile Discrimination using pipe cleaners, puffy paint, and yarn
 * Users can compare items based on weight
 
-![DS 1](assets/img/ds4.webp "DS 1")
+![DS 1](assets/img/ds4.jpg "DS 1")
 
 Even though we focused on making our products accessible to visually impaired users, our design choices could help all users better understand our data. Universal design creates a product that can be accessed and used to its full extent by all users regardless of age, size, ability, or disability. Designing accessible products is beneficial to all users because they are easier to use through a better tolerance for error, an intuitive design, and little physical effort required. 
 
