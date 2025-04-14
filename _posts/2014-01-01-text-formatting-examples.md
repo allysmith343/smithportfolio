@@ -20,7 +20,7 @@ Hold onto your popcorn, because movie data analysis just got that much better! I
 We are excited to share a series of visuals for users to use and learn more about various aspects of movie production, profits, and popularity!
 
 Click the hotlink to see the final designs: 
-[Final Designs](https://allysmith.dcreate.domains/ "Final Designs")
+[Bubble Chart and Popular Trailers](designsprint2/bubbles/index.html "Bubble Chart and Popular Trailers") and [World Revenue Map](designsprint2/map/index.html "World Revenue Map")
 
 ## The Data Set
 

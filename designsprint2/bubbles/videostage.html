@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stage</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        .background-container {
+            background-image: url('880.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            color: white;
+        }
+        .ribbon {
+            position: absolute;
+            top: 25%;
+            left: 110px;
+            width: 150px;
+            height: 50%;
+        }
+        .video-container {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            top: 50%;
+            left: 30%;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-size: 2vw;
+        }
+        .text-container {
+            position: absolute;
+            top: 17%;
+            left: 60%;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        .text {
+            position: absolute;
+            top: 20%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            font-size: 2vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .popcorn-bucket {
+            position: absolute;
+            bottom: 21%;
+            right: 80px;
+            transform: translateX(-50%);
+            width: 350px;
+            height: 400px;
+        }
+        .popcorn-text {
+            position: absolute;
+            bottom: 9%;
+            right: 80px;
+            transform: translateX(-50%);
+            width: 350px;
+            text-align: center;
+            color: white;
+            font-size: 1.2vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+            font-size: 2vw;
+        }
+        .left-arrow {
+            left: 20px;
+        }
+        .right-arrow {
+            right: 20px;
+        }
+        /* Simple home button styling */
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        /* Styling for the text below the video */
+        .video-text {
+            position: absolute;
+            bottom: 25%;
+            /*right: 80px;*/
+            left: 440px;
+            transform: translateX(-50%);
+            width: 350px;
+            text-align: center;
+            color: white;
+            font-size: 1.2vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="text-container"></div>
+        <div class="text" id="overlayText">ACTION</div>
+    </div>
+    <div class="video-container">
+        <iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- New text below the video frame -->
+    <div class="video-text">Top Movie's Trailer in this Genre</div>
+
+    <img class="ribbon" src="blueribbon.png"/>
+    <button class="arrow left-arrow">&#9664;</button>
+    <button class="arrow right-arrow">&#9654;</button>
+    <svg id="popcornCircles" width="150" height="200" 
+         style="position:absolute; bottom:28%; right:100px; transform:translateX(-50%);"></svg>
+    <img class="popcorn-bucket" src="popcorn.png"/>
+
+    <!-- Text below the popcorn bucket -->
+    <div class="popcorn-text">
+        Genre Popularity<br> 
+        The more popcorn kernels, the more popular the genre is!<br> 
+        Click to see more genres, the trailer for their top movie, and the overall popularity!
+    </div>
+
+    <!-- New text below the video frame -->
+    <div class="video-text">Top Movie's Trailer in this Genre</div>
+
+    <!-- Home button in the top-left corner -->
+    <div class="home-button" onclick="window.location.href='index.html';">Home</div>
+
+    <script>
+        // Video data and genre lists
+        const videos = [
+            'https://www.youtube.com/embed/vS3_72Gb-bI',
+            'https://www.youtube.com/embed/pBk4NYhWNMM',
+            'https://www.youtube.com/embed/0OSMZPJbm_g',
+            'https://www.youtube.com/embed/uYPbbksJxIg',
+            'https://www.youtube.com/embed/hXzcyx9V0xw',
+            'https://www.youtube.com/embed/Sko0o_KoBHY',
+            'https://www.youtube.com/embed/QF-oyCwaArU',
+            'https://www.youtube.com/embed/fR1VptShVmg'
+        ];
+
+        const genres = [
+            "ACTION",
+            "COMEDY",
+            "DOCUMENTARY",
+            "DRAMA",
+            "FAMILY",
+            "FANTASY",
+            "HORROR",
+            "ROMANCE"
+        ];
+
+        const popcorn = [
+            28,
+            14,
+            8,
+            14,
+            32,
+            24,
+            22,
+            15
+        ];
+
+        let currentVideoIndex = 0; // Start at the first video
+
+        const videoFrame = d3.select('#video');
+        const popcornCircles = d3.select('#popcornCircles');
+
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                genre: params.get('genre')
+            };
+        }
+
+        // Function to find the index of the genre
+        function getGenreIndex(genre) {
+            return genres.findIndex(g => g.toUpperCase() === genre.toUpperCase());
+        }
+
+        // Load the genre from the query string
+        const queryParams = getQueryParams();
+        const genre = queryParams.genre ? queryParams.genre.toUpperCase() : null;
+
+        // If a genre is provided in the URL, find its index
+        if (genre) {
+            const genreIndex = getGenreIndex(genre);
+
+            // If the genre exists, update the page accordingly
+            if (genreIndex >= 0) {
+                currentVideoIndex = genreIndex; // Set current index directly from the genre
+                updateVideo(currentVideoIndex);
+            } else {
+                console.warn('Genre not found:', genre);
+            }
+        }
+
+        function loadVideo(index) {
+            videoFrame.attr('src', videos[index]);
+        }
+
+        function updatePopcornLevel(index) {
+            const fullness = popcorn[index];
+            const circleCount = Math.floor(fullness/2);
+            popcornCircles.selectAll("*").remove();
+
+            const scatterArea = { x: 100, y: 100 };
+
+            for (let i = 0; i < circleCount; i++) {
+                const xOffset = Math.random() * scatterArea.x - (scatterArea.x / 2);
+                const yOffset = Math.random() * scatterArea.y - (scatterArea.y / 2);
+
+                const imageX = 75 + xOffset;
+                const imageY = 180 - yOffset;
+
+                if (imageX >= 0 && imageX <= 150 && imageY >= 0 && imageY <= 200) {
+                    popcornCircles.append("image")
+                        .attr("href", "popcornKernel.png")
+                        .attr("x", imageX - 12)
+                        .attr("y", imageY - 12)
+                        .attr("width", 24)
+                        .attr("height", 24);
+                }
+            }
+        }
+
+        function updateGenre(index) {
+            document.getElementById('overlayText').innerText = genres[index];
+        }
+
+        function updateVideo(index) {
+            currentVideoIndex = index; // Update the current video index
+            loadVideo(currentVideoIndex);
+            updateGenre(currentVideoIndex);
+            updatePopcornLevel(currentVideoIndex);
+        }
+
+        // Setup arrow button event listeners
+        function setupArrowListeners() {
+            d3.select('.left-arrow').on('click', () => {
+                currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length; 
+                updateVideo(currentVideoIndex);
+            });
+
+            d3.select('.right-arrow').on('click', () => {
+                currentVideoIndex = (currentVideoIndex + 1) % videos.length; 
+                updateVideo(currentVideoIndex);
+            });
+        }
+
+        // Load the initial video
+        loadVideo(currentVideoIndex);
+        updateGenre(currentVideoIndex);
+        updatePopcornLevel(currentVideoIndex);
+        setupArrowListeners(); // Set up listeners after loading initial video
+    </script>
+</body>
+</html>

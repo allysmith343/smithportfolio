@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Chart of Movie Genres</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Basic styling for the SVG circles */
+        
+        .bubble {
+            fill-opacity: 0.7;
+            stroke: #000;
+            stroke-width: 1.5;
+        }
+        h1 {
+            left: 200px; /* You can change this to left or right */
+            margin-left: 100px; /* Adjust this value to move the title over */
+            font-size: 24px; /* You can adjust the font size if needed */
+            color: #333; /* Customize the text color */
+            margin-top: 50px;
+        }
+
+        .label {
+            text-anchor: middle; /* Center align text */
+            dominant-baseline: middle; /* Center align vertically */
+        }
+
+        /* Tooltip styling */
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            padding: 5px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0; /* Start hidden */
+        }
+
+        /* Style for the description text below the title */
+        .description-text {
+            font-size: 15px;
+            color: #333;
+            max-width: 500px;
+            /* margin: 10px auto; Centering the description text */
+            text-align: center; 
+            left: 200px;
+        }
+
+        /* Simple home button styling */
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 60px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Movie Genre Popularity</h1> <!-- Title -->
+
+    <!-- New description text below the title -->
+    <div class="description-text">
+        The size and shade of the bubbles represent the average popularity of each genre. <br> 
+        The larger and darker the bubble, the more popular that genre is. <br>
+        Hover over a bubble to see the exact popularity or click on one to see 
+        that genre's most popular movie's trailer!
+    </div>
+
+    <svg width="600" height="500"></svg> <!-- Reduced width and height -->
+    <div class="tooltip"></div> <!-- Tooltip div -->
+    <!-- Home button in the top-left corner -->
+    <!-- Home button in the top-left corner -->
+    <div class="home-button" onclick="window.location.href='https://allysmith.dcreate.domains/';">Domain</div>
+
+
+
+    <script>
+        // Load the CSV file
+        d3.csv("moviedata_trimmed.csv").then(function(movies) {
+            // Convert popularity to a number
+            movies.forEach(d => d.popularity = +d.popularity);
+
+            // Group movies by genre and calculate average popularity
+            const genreMap = d3.group(movies, d => d.genre);
+            const genres = Array.from(genreMap, ([genre, movies]) => {
+                return {
+                    genre: genre,
+                    averagePopularity: d3.mean(movies, d => d.popularity) // Calculate average popularity
+                };
+            }).filter(d => d.genre); // Ensure genre is valid
+
+            // Sort genres by average popularity
+            genres.sort((a, b) => b.averagePopularity - a.averagePopularity);
+
+            // Set SVG dimensions and create a scaling function for bubble sizes
+            const svg = d3.select("svg");
+            const maxRadius = 60; // Maximum radius for the largest bubble
+            const minRadius = 10;  // Minimum radius for the smallest bubble
+
+            // Create a scale for bubble size with increased difference
+            const radiusScale = d3.scaleSqrt()
+                .domain([0, d3.max(genres, d => d.averagePopularity)]) // Input domain
+                .range([minRadius, maxRadius]); // Output range
+
+            // Create a color scale for the bubbles with increased contrast
+            const colorScale = d3.scaleLinear()
+                .domain([0, d3.max(genres, d => d.averagePopularity)]) // Input domain
+                .range(["#ADD8E6", "#00008B"]); // Light blue to dark blue
+
+            // Create a simulation to position bubbles
+            const simulation = d3.forceSimulation(genres)
+                .force("center", d3.forceCenter(svg.attr("width") / 2 - 50, svg.attr("height") / 2 - 50)) // Shift center left and up
+                .force("collide", d3.forceCollide(d => radiusScale(d.averagePopularity) - 2)) // Reduced collision radius for closer bubbles
+                .stop(); // Stop immediately after setting up
+
+            // Create the bubbles
+            const bubbles = svg.selectAll(".bubble")
+                .data(genres)
+                .enter()
+                .append("circle")
+                .attr("class", "bubble")
+                .attr("r", d => radiusScale(d.averagePopularity))
+                .attr("fill", d => colorScale(d.averagePopularity)) // Use the color scale for bubbles
+                .attr("stroke", "#000")
+                .attr("stroke-width", 1.5);
+
+            // Start the simulation
+            simulation.nodes(genres)
+                .on("tick", () => {
+                    bubbles
+                        .attr("cx", d => d.x)
+                        .attr("cy", d => d.y);
+
+                    // Update label positions based on circle positions
+                    svg.selectAll(".label")
+                        .attr("x", d => d.x) // Center label x
+                        .attr("y", d => d.y); // Center label y
+                })
+                .restart();
+
+            // Add labels to bubbles
+            svg.selectAll(".label")
+                .data(genres)
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .text(d => d.genre)
+                .attr("x", d => d.x) // Center label x (initially)
+                .attr("y", d => d.y) // Center label y (initially)
+                .attr("font-size", d => radiusScale(d.averagePopularity) * 0.3) // Dynamic font size based on radius
+                .attr("fill", "#fff"); // White text color
+
+            // Tooltip functionality
+            const tooltip = d3.select(".tooltip");
+
+            // Mouse events for bubbles
+            bubbles.on("mouseover", (event, d) => {
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", 0.9); // Fade in tooltip
+                    tooltip.html(`Genre: ${d.genre}<br>Avg Popularity: ${d.averagePopularity.toFixed(2)}`)
+                        .style("left", (event.pageX + 5) + "px") // Position tooltip
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mousemove", (event) => {
+                    tooltip.style("left", (event.pageX + 5) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", () => {
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0); // Fade out tooltip
+                })
+                .on("click", (event, d) => {
+                    // Redirect to the same page with the genre as a query parameter
+                    const genreUrl = `videostage.html?genre=${encodeURIComponent(d.genre.toUpperCase())}`;
+                    // Send genre in the query string
+                    window.location.href = genreUrl; // Redirect to the URL with the genre
+                });
+
+        }).catch(error => {
+            console.error("Error loading the CSV file:", error); // Handle errors
+        });
+
+        const videos = [
+            'https://www.youtube.com/embed/vS3_72Gb-bI',
+            'https://www.youtube.com/embed/pBk4NYhWNMM',
+            'https://www.youtube.com/embed/0OSMZPJbm_g',
+            'https://www.youtube.com/embed/uYPbbksJxIg',
+            'https://www.youtube.com/embed/hXzcyx9V0xw',
+            'https://www.youtube.com/embed/Sko0o_KoBHY',
+            'https://www.youtube.com/embed/QF-oyCwaArU',
+            'https://www.youtube.com/embed/fR1VptShVmg'
+        ];
+
+        const genres = [
+            "ACTION",
+            "COMEDY",
+            "DOCUMENTARY",
+            "DRAMA",
+            "FAMILY",
+            "FANTASY",
+            "HORROR",
+            "ROMANCE"
+        ];
+    </script>
+</body>
+</html>

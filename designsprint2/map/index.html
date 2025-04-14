@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map with D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            overflow:hidden;
+        }
+
+        #map{
+            width: 960px;
+            height:600px;
+            position: fixed;
+            top: 0; /* Align to the top */
+            left: 0; /* Align to the left */
+            overflow: hidden; /* Prevent any overflow */
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            padding: 5px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .country {
+            fill: #ccc;
+            stroke: #333;
+            stroke-width: 0.5;
+            cursor: pointer;
+        }
+
+        .country:hover {
+            fill: orange;
+        }
+        .text{
+            position: fixed; /* Position text absolutely within the container */
+            top: 300px; /* Center vertically */
+            right: 70px; /* Center horizontally */
+            font-size: 20px; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .money-bag1 {
+            position: fixed;
+            bottom: 21%;
+            right: 50px;
+            width: 150px;
+            /* Set width */
+            height: 200px;
+            /* Maintain aspect ratio */
+        }
+
+        .money-bag2 {
+            position: fixed;
+            bottom: 21%;
+            right: 270px;
+            transform: translateX(-50%);
+            transition: transform 0.2s ease;
+            width: 150px;
+            /* Set width */
+            height: 200px;
+            /* Smooth scaling transition */
+        }
+        .hoverCountry{
+            position: fixed; /* Position text absolutely within the container */
+            bottom: 15%;
+            right: 18.5%;
+            font-size: 14px; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .USstats{
+            position: fixed; /* Position text absolutely within the container */
+            bottom: 15%;
+            right: .5%;
+            font-size: 14px; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class = "text" id = "overlayText">Hover over a country on the map to <br/> see how that country's average budget <br/> per movie compares to the U.S.</div>
+    <div class = "USstats" id = "USstats"> United States <br/> Avg. Budget per movie: $28,446,716</div>
+    <div class = "hoverCountry" id = "other"></div>
+    <div class="tooltip" id="tooltip"></div>
+    <img class="money-bag1" src="moneyBag.png" />
+    <img class="money-bag2" src="moneyBag.png" />
+
+
+    <script>
+
+        
+        const width = 960;
+        const height = 600;
+
+        const projection = d3.geoMercator()
+            .scale(150)
+            .translate([width / 2, height / 1.5]);
+
+        const path = d3.geoPath().projection(projection);
+        const tooltip = d3.select("#tooltip");
+
+        // Example country data with ISO codes
+        const countryData = {
+            "428": "Avg. Budget: $1,000",
+            "268": "Avg. Budget: $2,000",
+            "068": "Avg. Budget: $2,500",
+            "340": "Avg. Budget: $50,00",
+            "442": "Avg. Budget: $25,000",
+            "800": "Avg. Budget: $25,000",
+            "462": "Avg. Budget: $32,500",
+            "756": "Avg. Budget: $45,000",
+            "116": "Avg. Budget: $54,500",
+            "524": "Avg. Budget: $90,315",
+            "834": "Avg. Budget: $100,000",
+            "050": "Avg. Budget: $109,551",
+            "364": "Avg. Budget: $115,481",
+            "360": "Avg. Budget: $136,000",
+            "233": "Avg. Budget: $137,812",
+            "862": "Avg. Budget: $152,500",
+            "214": "Avg. Budget: $160,000",
+            '604': "Avg. Budget: $167,613",
+            "170": "Avg. Budget: $175,000",
+            "144": "Avg. Budget: $200,000",
+            "300": "Avg. Budget: $213,288",
+            "858": "Avg. Budget: $251,500",
+            "398": "Avg. Budget: $266,937",
+            "566": "Avg. Budget: $300,000",
+            "682": "Avg. Budget: $300,000",
+            "031": "Avg. Budget: $378,378",
+            "440": "Avg. Budget: $415,596",
+            "642": "Avg. Budget: $435,090",
+            "792": "Avg. Budget: $496,235",
+            "688": "Avg. Budget: $500,000",
+            "704": "Avg. Budget: $720,802",
+            "608": "Avg. Budget: $1,026,805",
+            "703": "Avg. Budget: $1,087,475",
+            "032": "Avg. Budget: $1,176,713",
+            "496": "Avg. Budget: $1,200,000",
+            "376": "Avg. Budget: $1,205,285",
+            "208": "Avg. Budget: $1,255,000",
+            "702": "Avg. Budget: $1,364,721",
+            "586": "Avg. Budget: $1,417,827",
+            "504": "Avg. Budget: $1,460,910",
+            "056": "Avg. Budget: $1,494,500",
+            "752": "Avg. Budget: $1,564,185",
+            "246": "Avg. Budget: $1,633,215",
+            "528": "Avg. Budget: $1,753,451",
+            "620": "Avg. Budget: $1,762,500",
+            "348": "Avg. Budget: $1,772,219",
+            "804": "Avg. Budget: $1,861,013",
+            "458": "Avg. Budget: $2,128,234",
+            "554": "Avg. Budget: $2,360,000",
+            "372": "Avg. Budget: $2,475,830",
+            "040": "Avg. Budget: $2,482,917",
+            "818": "Avg. Budget: $2,613,451",
+            "484": "Avg. Budget: $2,830,651",
+            "764": "Avg. Budget: $3,623,273",
+            "616": "Avg. Budget: $3,668,683",
+            "643": "Avg. Budget: $4,194,107",
+            "578": "Avg. Budget: $4,625,757",
+            "124": "Avg. Budget: $4,885,980",
+            "724": "Avg. Budget: $4,994,634",
+            "356": "Avg. Budget: $5,125,578",
+            "276": "Avg. Budget: $5,417,601",
+            "380": "Avg. Budget: $6,308,343",
+            "344": "Avg. Budget: $6,375,193",
+            "203": "Avg. Budget: $6,473,781",
+            "158": "Avg. Budget: $7,569,682",
+            "036": "Avg. Budget: $8,119,170",
+            "410": "Avg. Budget: $8,658,652",
+            "392": "Avg. Budget: $9,185,131",
+            "250": "Avg. Budget: $11,324,848",
+            "076": "Avg. Budget: $13,016,398",
+            "710": "Avg. Budget: $20,000,000",
+            "840": "Avg. Budget: $28,446,716",
+            "156": "Avg. Budget: $28,948,512",
+            "784": "Avg. Budget: $35,000,000",
+            "826": "Avg. Budget: $9,059,883"
+            // Add more country data as needed
+        };
+
+        const usAverage = 28446716
+        const moneyBag1Width = 150; // Original width of money-bag1
+        const moneyBag1Height = 200; // Original height of money-bag1
+        // Load the TopoJSON data
+        d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(data => {
+            const countries = topojson.feature(data, data.objects.countries).features;
+
+
+            const svg = d3.select("#map").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            svg.selectAll(".country")
+                .data(countries)
+                .enter().append("path")
+                .attr("class", "country")
+                .attr("d", path)
+                .attr("fill", "#ccc")
+                .attr("stroke", "#333")
+                .on("mouseover", (event, d) => {
+                    const countryName = d.properties.name;
+                    const countryCode = d.id.toString();
+
+                    // Look up the country data
+                    const info = countryData[countryCode] || "No info available";
+                    const countryBudget = countryData[countryCode] ? parseFloat(countryData[countryCode].split('$')[1].replace(/,/g, '')) : 0;
+
+                    // Scale the size of money-bag2 based on the country's average budget
+                    const scaleFactor = countryBudget / usAverage; // Scale factor relative to U.S. average
+                    const newScale = scaleFactor;
+
+                    // Update the money-bag2 size
+                    d3.select('.money-bag2')
+                        .style('transform', `translateX(-50%) scale(${newScale})`);
+
+                    d3.select('#other')
+                        .html(`${countryName}<br>Avg. Budget per movie: ${info}`);
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    tooltip.html(`${countryName}<br>${info}`)
+                        .style("left", (event.pageX + 5) + "px")
+                        .style("top", (event.pageY - tooltip.node().getBoundingClientRect().height - 5) + "px");
+                })
+                .on("mouseout", () => {
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+
+                    d3.select('.money-bag2')
+                        .style('transform', 'translateX(-50%) scale(1)');
+                });
+        }).catch(error => {
+            console.error("Error loading or parsing data:", error);
+        });
+    </script>
+</body>
+
+</html>
